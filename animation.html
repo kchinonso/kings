@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        animation: king 5s infinite ease-in-out;
+        background-image: url(img/tablesetting.jpg);
+    }
+    /* body{
+        background-image: url(img/tablesetting2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    } */
+
+
+    @keyframes king {
+        0%{
+            background-color: blue;
+            left: 0px; top: 0px;
+            
+        }
+        25%{
+            background-color: red;
+            left: 500px; top: 0px;
+            
+        }
+        50%{
+            background-color: yellow;
+            left: 500px;top: 500px;
+            
+
+        }
+        75%{
+            background-color: black;
+            left: 0px; top: 500px;
+            
+        }
+        100%{
+            background-color: gold;
+            left: 0px; top: 0px; 
+        }
+      
+    }
+</style>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="ing

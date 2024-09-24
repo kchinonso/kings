@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .rec{
+        width: 500px;
+        height: 300px;
+        background-image: linear-gradient(to bottom left, blue, green, red);
+    }
+    .rec:hover{
+        width: 500px;
+        height: 300px;
+        background-image: linear-gradient(to bottom left, red, green, blue);
+    }
+    .rad{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        transition: width 5s, background-color 5s;
+        background-image: radial-gradient(blue 20%,red 0%,yellow 50%);
+    }
+    .rad:hover{
+        width: 500px;
+        height: 500px;
+        border-radius: 100%;
+        background-image: radial-gradient(yellow 20%,red 0%,blue 50%);
+    }
+
+    .con{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+       background-image: conic-gradient(green,  blue , red, yellow );
+    }
+    .conn{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+       background-image: conic-gradient(green 0deg,green 90deg,  blue 90deg, blue 180deg, red 180deg,red 270deg, yellow 270deg, yellow 360deg);
+       /* animation: chi 1s infinite linear; */
+    }
+    .conn:hover{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        position: relative;
+       background-image: conic-gradient(green 0deg,green 90deg,  blue 90deg, blue 180deg, red 180deg,red 270deg, yellow 270deg, yellow 360deg);
+       animation: chi 1ms infinite ease-out;
+    }
+
+
+    @keyframes chi{
+        0%{
+            transform: rotate(360deg);
+        };
+        100%{
+            transform: rotate(360deg);
+        };
+    }
+</style>
+<body>
+    <div class="rec">
+
+    </div><br><br><br><br><br>
+
+    <div class="rad">
+
+    </div><br><br><br><br><br>
+
+    <div class="con">
+
+    </div>
+ 
+
+    </div><br><br><br><br><br>
+
+    <div class="conn">
+
+    </div>
+</body>
+</html>
